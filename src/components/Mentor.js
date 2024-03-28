@@ -65,7 +65,6 @@ const Mentor = ({mentor,assignedStudents,Remaining_students,Prev_page,Assign_stu
             <th>Execution</th>
             <th>Viva</th>
             <th>Total</th>
-            <th>Action</th>
             <th><button className="button1" onClick={Prev_page}>Return</button></th>
           </tr>
         </thead>
