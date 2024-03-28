@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Mentor Dashboard App [Link](https://mentor-dashboard-lyart.vercel.app/)
+This App helps you easily view, update/edit , add or remove students to a particular mentor and then download their report card as well in the form of a pdf :-).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **Features:**
+1. The Mentor Dashboard provides a platform for mentors to manage student evaluations and is Responsive as well. 
+2. Mentors can click on their name and open the dashboard.
+3. Once Entered, mentors can add students to their dashboard and assign marks based on project criteria such as ideation, execution and viva. 
+4. The App automatically calculates the total marks obtained by each student.
+5. Once the mentor is sure of the marks given to the students, He/She can lock the grades.
+6. Once Locked, the changes cannot be made further, and the marks can be downloaded as a student report pdf.
 
-## Available Scripts
+### **Edge Cases Taken care Of**
+1. The number of students while locking the grades should not be less than 3 and greater than 4.
+2. The Marks field i.e. (Viva, Ideation, Execution) cannot be empty while locking of grades.
+3. Same student is not assigned to more than one mentor.
+4. The marks field's cannot take a value greater than 10 as the maximum marks are 10 for each topic.
+5. Once Locked no modifications can be done and only the pdf can be downloaded.
 
-In the project directory, you can run:
+### **Major Issue I faced**
+I faced a major issue in deploying frontend and backend sides of the app and then connecting them. To Overcome this I made a "database.js" file in src folder of my App that follows the same schema and then connected it to the frontend. It serves the same purpose as the backend just that Backend Tech Stacks were ignored.
 
-### `npm start`
+### **Next Onto the App**
+1. The Send Email Feature is to be added.
+2. Backend to be deployed and is to be connected to Frontend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Method to install the App and run it in the local**
+1. Open the terminal in the VS Code or any other Code Editor.
+2. Copy Paste the Following Command in the terminal.
+``` 
+git clone https://github.com/akshunmish7/Mentor_Dashboard.git
+```
+3. Next Run the following command on the Terminal
+```
+cd Mentor_Dashboard (or press the "tab" key after cd)
+npm install
+```
+4. Once All the Dependencies are installed you can Run the App
+```
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Tech Stacks Used**
+### Frontend: 
+- Reactjs
+- HTML
+- CSS
+- JavaScript
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Backend:(Since this Only Contains database.js File)
+- JavaScript
