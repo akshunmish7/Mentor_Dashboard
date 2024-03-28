@@ -38,13 +38,3 @@ npm install
 ```
 npm start
 ```
-
-## **Tech Stacks Used**
-### Frontend: 
-- Reactjs
-- HTML
-- CSS
-- JavaScript
-
-### Backend:(Since this Only Contains database.js File)
-- JavaScript
