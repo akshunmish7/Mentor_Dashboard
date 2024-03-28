@@ -46,7 +46,7 @@ const Mentor = ({mentor,assignedStudents,Remaining_students,Prev_page,Assign_stu
     let y = 20;
     assignedStudents.forEach((student) => {
       doc.text(
-        `${student.name} - Ideation Marks: ${student.ideation}, Execution Marks: ${student.execution}, Viva Marks: ${student.viva}, Total Marks: ${student.total}`,
+        `${student.name} - Ideation: ${student.ideation}, Execution: ${student.execution}, Viva: ${student.viva}, Total: ${student.total}`,
         10,y
       );
       y += 10;
